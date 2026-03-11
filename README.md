@@ -1,5 +1,11 @@
 # claude-ssh-proxy
 
+> [English Version](./README_EN.md)
+
+[![AI-Powered](https://img.shields.io/badge/AI--Powered-Claude-blueviolet)](https://claude.ai)
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-blue)](https://code.claude.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 在**无公网 IP、无外网**的内网 Linux 服务器上使用 Claude Code CLI。
 
 通过 SSH 反向隧道，将本地 Mac 上的 API 代理端口"带入"远程服务器，让远程的 Claude Code 直接通过 `localhost` 访问 Anthropic API。
@@ -201,6 +207,10 @@ claude-ssh dev@airgapped-server
 **SSE 流式不工作：** 确认 Node.js >= 18，代理默认关闭了 response buffering
 
 **端口被占用：** 换一个端口 `claude-ssh -p 19090 -r 19090 user@server`
+
+## 致谢
+
+本项目由 [Claude](https://claude.ai) AI 辅助开发，从架构设计、代码实现到文档撰写均在 AI 协作下完成。
 
 ## License
 
